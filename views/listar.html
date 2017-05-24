@@ -1,0 +1,24 @@
+<table class="table" >
+  <caption class="lead">--- Usuários Cadastrados ---</caption>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Curso</th>
+      <th>E-mail</th>
+      <th>Insituição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="cadastro in cadastro">
+      <td>{{cadastro.nome}}</td>
+      <td>{{noticia.curso}}</td>
+      <td>{{noticia.email}}</td>
+      <td>{{noticia.insituicao}}</td>
+	  <td><a href="#/editar/{{cadastro.$id}}" class="btn btn-small btn-primary">Editar</a> <a class="btn btn-small btn-danger" ng-click="removeCadastro(cadastro.$id)">Apagar</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+    <a href="#/adicionar" class="btn btn-success" role="button">Adicionar Usuário</a>
+</p>
+

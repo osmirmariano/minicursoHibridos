@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sistema de Login DAI-UFT</title>
+	</head>
+
+	<body ng-controller="loginController">
+		<hgroup>
+		  <h3>Entre com o usuário e senha de administrador para poder publicar notícias</h3>
+		</hgroup>
+
+		<form ng-submit='login()'>
+			<div class="group">
+				<label for="email">Email</label>
+				<input id="email" ng-model='email' type="email" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+			</div>
+
+			<div class="group">
+				<label for="password">Senha</label>
+				<input id="password" ng-model='password' type="password" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+			</div>
+
+			<a href="#/lista">
+				<button class="button buttonBlue">Entrar
+				    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+				</button>
+			</a>
+		</form>
+
+		<footer>
+			<img src="img/logo.png" style="width: 6%; height: 6%;" />
+		  	<p>Copyright &copy 2017<br/>DIRETORIA DE ASSUNTOS INTERNACIONAIS DAI-UFT <br/>Todos os Direitos reservados</p>
+		</footer>
+	</body>
+</html>
