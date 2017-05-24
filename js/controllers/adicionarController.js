@@ -3,7 +3,7 @@ app.controller('adicionarController', ['$scope', '$firebaseArray', '$location', 
 	$scope.adicionarCadastro = function() {
 		var ref = new Firebase(FBURL);
 		var cadastro = $firebaseArray(ref);
-		noticia.$add({
+		cadastro.$add({
 			nome: $scope.cadastro.nome,
 			curso: $scope.cadastro.curso,
 			email: $scope.cadastro.email,
